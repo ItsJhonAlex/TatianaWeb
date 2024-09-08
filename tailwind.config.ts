@@ -11,9 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
       },
     },
   },
   plugins: [],
+  darkMode: 'class', // Habilita el modo oscuro basado en clases
 };
 export default config;

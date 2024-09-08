@@ -4,24 +4,31 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1e3a8a;
+  --primary: #06b6d4;
+  --secondary: #0891b2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #1f2937;
+  --foreground: #f3f4f6;
+  --primary: #22d3ee;
+  --secondary: #67e8f9;
 }
 
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+  max-width: 1200px;
+}
+
+/* Añade efectos de partículas o brillos si lo deseas */
+.particle {
+  position: absolute;
+  background-color: rgba(0, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
 }
